@@ -21,7 +21,7 @@
       overflow: hidden;
     }
 
-    /* Floating hearts background */
+ 
     .hearts-bg {
       position: fixed;
       top: 0;
@@ -151,7 +151,6 @@
       transform: translateY(0);
     }
 
-    /* Overlay for the "How dare you" popup */
     .overlay {
       display: none;
       position: fixed;
@@ -181,7 +180,6 @@
       100% { transform: scale(1) rotate(0deg); opacity: 1; }
     }
 
-    /* ===== CELEBRATION SCREEN ===== */
     .celebration {
       display: none;
       position: fixed;
@@ -216,7 +214,6 @@
       margin-top: 12px;
     }
 
-    /* CSS Flower bloom animation */
     .flower-wrapper {
       margin-bottom: 20px;
       display: flex;
@@ -271,7 +268,7 @@
       filter: drop-shadow(0 2px 3px rgba(0,0,0,0.15));
     }
 
-    /* Pointy petal shape using clip-path */
+   
     .flower-petal {
       clip-path: polygon(
         50% 0%,
@@ -302,7 +299,6 @@
     .flower-petal:nth-child(11) { transform: rotate(300deg); }
     .flower-petal:nth-child(12) { transform: rotate(330deg); }
 
-    /* Alternate petal shading for depth */
     .flower-petal:nth-child(odd) {
       background: linear-gradient(180deg, #ff7ac6, #f22a9a, #d81b7a);
     }
@@ -310,7 +306,7 @@
       background: linear-gradient(180deg, #ff5caf, #e91e8c, #c2186b);
     }
 
-    /* Yellow center */
+  
     .flower-center {
       position: absolute;
       width: 30px;
@@ -324,7 +320,6 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.18), inset 0 -2px 4px rgba(0,0,0,0.1);
     }
 
-    /* Petal bloom stagger - each petal scales in */
     .flower.blooming .flower-petal {
       animation: petalBloom 1.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards;
     }
@@ -366,7 +361,6 @@
       }
     }
 
-    /* Rose petals falling */
     .petals-container {
       position: fixed;
       top: 0;
@@ -508,7 +502,7 @@
 
     // === No button dodging logic ===
     let dodgeCount = 0;
-    const maxDodges = 6;
+    const maxDodges = 3;
     const noBtn = document.getElementById('noBtn');
     const mainBox = document.getElementById('mainBox');
 
@@ -618,3 +612,4 @@
   </script>
 </body>
 </html>
+
